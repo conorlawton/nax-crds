@@ -1,0 +1,13 @@
+{
+	"id": "nax-crds",
+	"version": "1.0.0",
+	"title": "Custom Resource Definitions",
+	"description": "An event-subscriber model resource registration and resource handler.",
+	"repository": "https://github.com/naxane/nax-crds",
+	"tags": ["lib"],
+	"authors": ["nax"],
+	"dependencies": {
+		"nax-module-cache": "^1.0.0"
+	},
+	"plugin": "nax-crds/plugin.js"
+}

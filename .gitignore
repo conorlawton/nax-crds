@@ -1,0 +1,7 @@
+node_modules
+dist
+*.code-workspace
+.vscode/
+build/
+*.png~
+esbuild-post.mjs
