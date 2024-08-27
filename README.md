@@ -24,8 +24,8 @@ window.nax.crds.registerResourceHandler<{ someKey: string }>("my-mod.my-resource
 - The calling of resource handlers is done in order of registration. The following will log to the console 5, 13, 10, 26, in succession. This shows that resources added before resource handlers are called once a resource handler is registered, likewise resource handlers added before resources will be called with a given resource once that resource is registered.
 
 ```js
-window.nax.crds.registerResource < { key: number } > ("test", { key: 5 });
-window.nax.crds.registerResourceHandler < { key: number } > ("test", resource => console.log(resource.key));
-window.nax.crds.registerResource < { key: number } > ("test", { key: 13 });
-window.nax.crds.registerResourceHandler < { key: number } > ("test", resource => console.log(resource.key * 2));
+window.nax.crds.registerResource<{ key: number }>("test", { key: 5 });
+window.nax.crds.registerResourceHandler<{ key: number }>("test", resource => console.log(resource.key));
+window.nax.crds.registerResource<{ key: number }>("test", { key: 13 });
+window.nax.crds.registerResourceHandler<{ key: number }>("test", resource => console.log(resource.key * 2));
 ```
