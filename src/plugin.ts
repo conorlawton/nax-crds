@@ -17,10 +17,10 @@ export default class CRDS implements PluginClass {
 	}
 
 	preload() {
-		window.nax.crds.registerResource<{ key: number }>("test", { key: 5 });
-		window.nax.crds.registerResourceHandler<{ key: number }>("test", resource => console.log(resource.key));
-		window.nax.crds.registerResource<{ key: number }>("test", { key: 13 });
-		window.nax.crds.registerResourceHandler<{ key: number }>("test", resource => console.log(resource.key * 2));
+		// window.nax.crds.registerResource<{ key: number }>("test", { key: 5 });
+		// window.nax.crds.registerResourceHandler<{ key: number }>("test", resource => console.log(resource.key));
+		// window.nax.crds.registerResource<{ key: number }>("test", { key: 13 });
+		// window.nax.crds.registerResourceHandler<{ key: number }>("test", resource => console.log(resource.key * 2));
 	}
 
 	/**
